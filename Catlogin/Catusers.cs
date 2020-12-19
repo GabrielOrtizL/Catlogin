@@ -14,7 +14,7 @@ namespace Catlogin
 
         public Catusers() { }
 
-        public Catusers(int id, string user, string password)
+        public Catusers (int id, string user, string password)
         {
             this.id = id;
             this.user = user;

@@ -28,7 +28,9 @@ namespace Catlogin
             {
                 MessageBox.Show("Bienvenido");
                 Cathome home = new Cathome();
-                home.Show();
+                this.Hide();
+                home.ShowDialog();
+                this.Show();
             }
             else
             {

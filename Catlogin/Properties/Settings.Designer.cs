@@ -33,5 +33,15 @@ namespace Catlogin.Properties {
                 return ((string)(this["catcandyConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;password=Ga19331500*;database=dulce")]
+        public string dulceConnectionString {
+            get {
+                return ((string)(this["dulceConnectionString"]));
+            }
+        }
     }
 }

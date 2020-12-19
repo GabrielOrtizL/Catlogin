@@ -11,7 +11,7 @@ namespace Catlogin
     {
         public static MySqlConnection obtenerConexion()
         {
-            MySqlConnection conexion = new MySqlConnection("server=localhost;database=catcandy;Uid=root;pwd=Ga19331500*;");
+            MySqlConnection conexion = new MySqlConnection("server=localhost;database=Dulce;Uid=root;pwd=Ga19331500*;");
             conexion.Open();
             return conexion;
 
