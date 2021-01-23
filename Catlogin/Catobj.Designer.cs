@@ -30,6 +30,7 @@ namespace Catlogin
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Catobj));
             this.btninsertar = new System.Windows.Forms.Button();
             this.catcandyDataSet = new Catlogin.catcandyDataSet();
             this.catcandyDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -59,12 +60,13 @@ namespace Catlogin
             // 
             // btninsertar
             // 
+            this.btninsertar.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btninsertar.Location = new System.Drawing.Point(22, 22);
             this.btninsertar.Name = "btninsertar";
             this.btninsertar.Size = new System.Drawing.Size(75, 23);
             this.btninsertar.TabIndex = 0;
             this.btninsertar.Text = "Crear ";
-            this.btninsertar.UseVisualStyleBackColor = true;
+            this.btninsertar.UseVisualStyleBackColor = false;
             this.btninsertar.Click += new System.EventHandler(this.btninsertar_Click);
             // 
             // catcandyDataSet
@@ -88,22 +90,24 @@ namespace Catlogin
             // 
             // btnactalizar
             // 
+            this.btnactalizar.BackColor = System.Drawing.Color.Aquamarine;
             this.btnactalizar.Location = new System.Drawing.Point(220, 22);
             this.btnactalizar.Name = "btnactalizar";
             this.btnactalizar.Size = new System.Drawing.Size(75, 23);
             this.btnactalizar.TabIndex = 2;
             this.btnactalizar.Text = "Actualizar";
-            this.btnactalizar.UseVisualStyleBackColor = true;
+            this.btnactalizar.UseVisualStyleBackColor = false;
             this.btnactalizar.Click += new System.EventHandler(this.btnactalizar_Click);
             // 
             // btneliminar
             // 
+            this.btneliminar.BackColor = System.Drawing.Color.Red;
             this.btneliminar.Location = new System.Drawing.Point(320, 22);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(75, 23);
             this.btneliminar.TabIndex = 3;
             this.btneliminar.Text = "Eliminar";
-            this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.UseVisualStyleBackColor = false;
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
             // catusersBindingSource1
@@ -113,12 +117,13 @@ namespace Catlogin
             // 
             // btnleer
             // 
+            this.btnleer.BackColor = System.Drawing.Color.Lime;
             this.btnleer.Location = new System.Drawing.Point(122, 22);
             this.btnleer.Name = "btnleer";
             this.btnleer.Size = new System.Drawing.Size(75, 23);
             this.btnleer.TabIndex = 4;
             this.btnleer.Text = "Leer";
-            this.btnleer.UseVisualStyleBackColor = true;
+            this.btnleer.UseVisualStyleBackColor = false;
             this.btnleer.Click += new System.EventHandler(this.btnleer_Click);
             // 
             // catusersBindingSource2
@@ -176,6 +181,7 @@ namespace Catlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(431, 324);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnleer);

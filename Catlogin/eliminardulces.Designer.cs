@@ -29,6 +29,7 @@ namespace Catlogin
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(eliminardulces));
             this.btnlogin = new System.Windows.Forms.Button();
             this.txtid = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -36,12 +37,13 @@ namespace Catlogin
             // 
             // btnlogin
             // 
+            this.btnlogin.BackColor = System.Drawing.Color.Red;
             this.btnlogin.Location = new System.Drawing.Point(119, 87);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(75, 23);
             this.btnlogin.TabIndex = 22;
             this.btnlogin.Text = "Eliminar";
-            this.btnlogin.UseVisualStyleBackColor = true;
+            this.btnlogin.UseVisualStyleBackColor = false;
             this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
             // txtid
@@ -54,9 +56,11 @@ namespace Catlogin
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(67, 40);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(18, 13);
+            this.label3.Size = new System.Drawing.Size(20, 13);
             this.label3.TabIndex = 20;
             this.label3.Text = "ID";
             // 
@@ -64,12 +68,13 @@ namespace Catlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(290, 189);
             this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.txtid);
             this.Controls.Add(this.label3);
             this.Name = "eliminardulces";
-            this.Text = "Form1";
+            this.Text = "Eliminar Dulce";
             this.ResumeLayout(false);
             this.PerformLayout();
 

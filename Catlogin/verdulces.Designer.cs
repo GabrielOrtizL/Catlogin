@@ -29,6 +29,7 @@ namespace Catlogin
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(verdulces));
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -36,12 +37,13 @@ namespace Catlogin
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.Location = new System.Drawing.Point(299, 8);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
             this.button1.Text = "Mostrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
@@ -56,6 +58,7 @@ namespace Catlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(424, 268);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);

@@ -29,6 +29,7 @@ namespace Catlogin
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adddulce));
             this.btnguardar = new System.Windows.Forms.Button();
             this.txtdulce = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,12 +37,13 @@ namespace Catlogin
             // 
             // btnguardar
             // 
-            this.btnguardar.Location = new System.Drawing.Point(109, 88);
+            this.btnguardar.BackColor = System.Drawing.Color.BlueViolet;
+            this.btnguardar.Location = new System.Drawing.Point(172, 85);
             this.btnguardar.Name = "btnguardar";
             this.btnguardar.Size = new System.Drawing.Size(73, 25);
             this.btnguardar.TabIndex = 0;
             this.btnguardar.Text = "Guardar";
-            this.btnguardar.UseVisualStyleBackColor = true;
+            this.btnguardar.UseVisualStyleBackColor = false;
             this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
             // txtdulce
@@ -64,6 +66,8 @@ namespace Catlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Aqua;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(319, 152);
             this.Controls.Add(this.txtdulce);
             this.Controls.Add(this.label1);

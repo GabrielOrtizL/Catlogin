@@ -29,6 +29,7 @@ namespace Catlogin
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Catactual));
             this.txtcontraseña = new System.Windows.Forms.TextBox();
             this.txtusuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -73,12 +74,13 @@ namespace Catlogin
             // 
             // btnlogin
             // 
+            this.btnlogin.BackColor = System.Drawing.Color.BlueViolet;
             this.btnlogin.Location = new System.Drawing.Point(188, 148);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(75, 23);
             this.btnlogin.TabIndex = 10;
             this.btnlogin.Text = "Actualizar";
-            this.btnlogin.UseVisualStyleBackColor = true;
+            this.btnlogin.UseVisualStyleBackColor = false;
             this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
             // txtid
@@ -101,6 +103,8 @@ namespace Catlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Aqua;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(362, 201);
             this.Controls.Add(this.txtid);
             this.Controls.Add(this.label3);

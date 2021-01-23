@@ -29,6 +29,7 @@ namespace Catlogin
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(actualizardulces));
             this.button1 = new System.Windows.Forms.Button();
             this.txtid = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,17 +39,18 @@ namespace Catlogin
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.BlueViolet;
             this.button1.Location = new System.Drawing.Point(159, 138);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Actualizar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtid
             // 
-            this.txtid.Location = new System.Drawing.Point(145, 12);
+            this.txtid.Location = new System.Drawing.Point(145, 52);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(100, 20);
             this.txtid.TabIndex = 23;
@@ -56,7 +58,7 @@ namespace Catlogin
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 12);
+            this.label3.Location = new System.Drawing.Point(32, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(18, 13);
             this.label3.TabIndex = 22;
@@ -64,7 +66,7 @@ namespace Catlogin
             // 
             // txtusuario
             // 
-            this.txtusuario.Location = new System.Drawing.Point(145, 52);
+            this.txtusuario.Location = new System.Drawing.Point(145, 92);
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(100, 20);
             this.txtusuario.TabIndex = 20;
@@ -72,7 +74,7 @@ namespace Catlogin
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 52);
+            this.label1.Location = new System.Drawing.Point(32, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 18;
@@ -82,6 +84,8 @@ namespace Catlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Cyan;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(320, 193);
             this.Controls.Add(this.txtid);
             this.Controls.Add(this.label3);
